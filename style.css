@@ -1,0 +1,352 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #ff8c00 0%, #32cd32 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.call-now-btn {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.call-now-btn:hover {
+    background: white;
+    color: #ff8c00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Services & Pricing Section */
+.services-pricing {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #ff8c00, #32cd32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #ff8c00, #32cd32);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-color: #ff8c00;
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ff8c00, #32cd32);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 15px rgba(255,140,0,0.3);
+}
+
+.service-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #ff8c00, #32cd32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.book-now-btn {
+    background: linear-gradient(135deg, #ff8c00, #32cd32);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.book-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,140,0,0.4);
+    background: linear-gradient(135deg, #32cd32, #ff8c00);
+}
+
+/* Quote Form Section */
+.quote-form {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ff8c00 0%, #32cd32 100%);
+    color: white;
+}
+
+.quote-form .section-title {
+    color: white;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: white;
+    background-clip: unset;
+}
+
+.quote-form .section-subtitle {
+    color: rgba(255,255,255,0.9);
+}
+
+.quote-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: white;
+    background: rgba(255,255,255,0.2);
+}
+
+.submit-btn {
+    background: white;
+    color: #ff8c00;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #f8f9fa;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .quote-form-container {
+        padding: 30px 20px;
+    }
+    
+    .call-now-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .services-pricing {
+        padding: 60px 0;
+    }
+    
+    .quote-form {
+        padding: 60px 0;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+    
+    .quote-form-container {
+        padding: 25px 15px;
+    }
+}
