@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVS Lawn Care & Services - Professional Lawn Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">VVS Lawn Care & Services</h1>
+                <p class="tagline">Professional lawn care for your beautiful outdoor space</p>
+                <a href="tel:+1234567890" class="call-now-btn">Call Now: (123) 456-7890</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services & Pricing Section -->
+    <section class="services-pricing" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services & Pricing</h2>
+            <p class="section-subtitle">Quality lawn care services to keep your property looking its best</p>
+            
+            <div class="services-grid">
+                <!-- Weekly Mowing Service -->
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3 class="service-name">Weekly Mowing</h3>
+                    <p class="service-description">Professional lawn mowing service to keep your grass healthy and well-maintained. Includes edging and cleanup.</p>
+                    <div class="service-price">Starting at $40</div>
+                    <button class="book-now-btn" onclick="scrollToQuote()">Book Now</button>
+                </div>
+
+                <!-- Hedge Trimming Service -->
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3 class="service-name">Hedge Trimming</h3>
+                    <p class="service-description">Expert hedge and shrub trimming to maintain shape and promote healthy growth. Perfect for maintaining curb appeal.</p>
+                    <div class="service-price">Starting at $60</div>
+                    <button class="book-now-btn" onclick="scrollToQuote()">Book Now</button>
+                </div>
+
+                <!-- Mulching Service -->
+                <div class="service-card">
+                    <div class="service-icon">🍂</div>
+                    <h3 class="service-name">Mulching</h3>
+                    <p class="service-description">Quality mulch installation to retain moisture, suppress weeds, and enhance your landscape's appearance.</p>
+                    <div class="service-price">Starting at $80</div>
+                    <button class="book-now-btn" onclick="scrollToQuote()">Book Now</button>
+                </div>
+
+                <!-- Seasonal Cleanup Service -->
+                <div class="service-card">
+                    <div class="service-icon">🌸</div>
+                    <h3 class="service-name">Seasonal Cleanup</h3>
+                    <p class="service-description">Comprehensive seasonal cleanup including leaf removal, debris clearing, and preparation for changing seasons.</p>
+                    <div class="service-price">Starting at $120</div>
+                    <button class="book-now-btn" onclick="scrollToQuote()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-form" id="quote">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Quote</h2>
+            <p class="section-subtitle">Tell us about your lawn care needs and we'll provide a customized quote</p>
+            
+            <form class="quote-form-container" action="mailto:info@vvslawncare.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-size">Property Size</label>
+                        <select id="property-size" name="property-size">
+                            <option value="">Select size...</option>
+                            <option value="small">Small (under 0.25 acres)</option>
+                            <option value="medium">Medium (0.25 - 0.5 acres)</option>
+                            <option value="large">Large (0.5 - 1 acre)</option>
+                            <option value="xlarge">Extra Large (over 1 acre)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="services">Services Needed</label>
+                    <select id="services" name="services">
+                        <option value="">Select service...</option>
+                        <option value="mowing">Weekly Mowing</option>
+                        <option value="trimming">Hedge Trimming</option>
+                        <option value="mulching">Mulching</option>
+                        <option value="cleanup">Seasonal Cleanup</option>
+                        <option value="multiple">Multiple Services</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your lawn care needs..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Get Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 VVS Lawn Care & Services. All rights reserved.</p>
+            <p>Professional lawn care services for a beautiful outdoor space.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToQuote() {
+            document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
