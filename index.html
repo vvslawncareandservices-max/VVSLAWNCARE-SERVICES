@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVS Lawncare & Services - Professional Lawn Care</title>
+    <meta name="description" content="Professional lawn care services. Get instant quotes, schedule services, and maintain a beautiful lawn with VVS Lawncare & Services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> VVS Lawncare & Services</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#quote">Get Quote</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+1234567890" class="call-btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Lawn Care Services</h1>
+                <p>Transform your outdoor space with VVS Lawncare & Services. We provide reliable, professional lawn care that keeps your property looking its best year-round.</p>
+                <div class="hero-actions">
+                    <a href="#quote" class="cta-btn">Get Instant Quote</a>
+                    <a href="tel:+1234567890" class="call-btn-hero">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Lawn Mowing</h3>
+                    <p>Regular mowing to keep your lawn healthy and beautiful</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Landscaping</h3>
+                    <p>Complete landscape design and maintenance services</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Tree Care</h3>
+                    <p>Professional tree trimming and maintenance</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Irrigation</h3>
+                    <p>Sprinkler system installation and repair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2>Get Your Instant Quote</h2>
+            <p>Fill out the form below and we'll get back to you with a personalized quote within 24 hours.</p>
+            
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="quote-form">
+                <input type="hidden" name="_subject" value="New Quote Request - VVS Lawncare">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-size">Property Size</label>
+                        <select id="property-size" name="property_size">
+                            <option value="">Select size</option>
+                            <option value="small">Small (under 0.25 acres)</option>
+                            <option value="medium">Medium (0.25 - 0.5 acres)</option>
+                            <option value="large">Large (0.5 - 1 acre)</option>
+                            <option value="xl">Extra Large (over 1 acre)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Property Address</label>
+                    <input type="text" id="address" name="address" placeholder="Street address, city, state">
+                </div>
+                
+                <div class="form-group">
+                    <label for="services">Services Needed</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="services" value="mowing"> Regular Mowing</label>
+                        <label><input type="checkbox" name="services" value="landscaping"> Landscaping</label>
+                        <label><input type="checkbox" name="services" value="tree-care"> Tree Care</label>
+                        <label><input type="checkbox" name="services" value="irrigation"> Irrigation</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your project..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Get My Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Referral Section -->
+    <section id="referral" class="referral-section">
+        <div class="container">
+            <h2>Refer a Friend & Save</h2>
+            <p>Know someone who needs lawn care? Refer them to us and both of you save money!</p>
+            
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="referral-form">
+                <input type="hidden" name="_subject" value="Customer Referral - VVS Lawncare">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-section">
+                    <h3>Your Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ref-your-name">Your Name *</label>
+                            <input type="text" id="ref-your-name" name="your_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ref-your-email">Your Email *</label>
+                            <input type="email" id="ref-your-email" name="your_email" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Friend's Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ref-friend-name">Friend's Name *</label>
+                            <input type="text" id="ref-friend-name" name="friend_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ref-friend-email">Friend's Email *</label>
+                            <input type="email" id="ref-friend-email" name="friend_email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ref-friend-phone">Friend's Phone</label>
+                        <input type="tel" id="ref-friend-phone" name="friend_phone">
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Referral</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:info@vvslawncare.com">info@vvslawncare.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Service Area</strong>
+                            <p>Local area and surrounding communities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+                    <input type="hidden" name="_subject" value="Contact Form - VVS Lawncare">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-leaf"></i> VVS Lawncare & Services</h3>
+                    <p>Professional lawn care services for a beautiful outdoor space.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#quote">Get Quote</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@vvslawncare.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VVS Lawncare & Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
